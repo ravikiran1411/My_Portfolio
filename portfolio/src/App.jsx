@@ -1,28 +1,26 @@
-import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import Education from "./components/Education";
+import Resume from "./components/Resume";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-
-import Home from "./pages/Home";
-import Projects from "./pages/Projects";
-import Skills from "./pages/Skills";
-import Resume from "./pages/Resume";
-import Contact from "./pages/Contact";
 
 const App = () => {
   return (
-    <>
+    <div className="bg-[#0A0A0A] text-white overflow-hidden">
       <Navbar />
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-
+      <Hero />
+      <About />
+      <Projects />
+      <Skills />
+      <Education />
+      <Resume />
+      <Contact />
       <Footer />
-    </>
+    </div>
   );
 };
 
