@@ -7,20 +7,20 @@ const Contact = () => {
     {
       title: "Email",
       icon: <MdEmail size={32} />,
-      value: "yourmail@gmail.com",
-      link: "mailto:yourmail@gmail.com",
+      value: "allimilliravikiran@gmail.com",
+      link: "mailto:allimilliravikiran@gmail.com",
     },
     {
       title: "LinkedIn",
       icon: <FaLinkedin size={32} />,
       value: "Connect with me",
-      link: "#",
+      link: "https://www.linkedin.com/in/ravi-kiran-8a9484366?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     },
     {
       title: "GitHub",
       icon: <FaGithub size={32} />,
       value: "View my repositories",
-      link: "#",
+      link: "https://github.com/ravikiran1411",
     },
   ];
 
@@ -56,18 +56,7 @@ const Contact = () => {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="
-                bg-white/5
-                border
-                border-white/10
-                rounded-3xl
-                p-8
-                text-center
-                hover:border-purple-500
-                hover:-translate-y-2
-                transition-all
-                duration-300
-              "
+              className="bg-white/5 border border-white/10 rounded-3xl p-8 text-center hover:border-purple-500 hover:-translate-y-2 transition-all duration-300"
             >
               <div className="text-purple-500 flex justify-center mb-5">
                 {item.icon}
